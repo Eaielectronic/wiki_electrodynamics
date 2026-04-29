@@ -6,57 +6,139 @@
 <title>Radiation — Nuclear Science</title>
 <link rel="stylesheet" href="../../style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2631008307109231" crossorigin="anonymous"></script>
 </head>
 <body>
 <div class="container">
   <aside class="sidebar">
     <div class="sidebar-logo"><i class="fa-solid fa-atom"></i><span>Nuclear Science</span></div>
     <div class="lang-switch">
-      <span class="active">🇬🇧 English</span>
       <a href="../../fr/nuclear/nuclear_radiation.html">🇫🇷 Français</a>
+      <span class="active">🇬🇧 English</span>
     </div>
     <nav><ul>
       <li><a href="../../en/index.html"><i class="fa-solid fa-house"></i>Home</a></li>
       <li><a href="nuclear_fissionreactor.html"><i class="fa-solid fa-atom"></i>Fission Reactor</a></li>
-<li><a href="nuclear_msreactor.html"><i class="fa-solid fa-flask"></i>MS Reactor</a></li>
-<li><a href="nuclear_fusionreactor.html"><i class="fa-solid fa-burst"></i>Fusion Reactor</a></li>
-<li><a href="nuclear_radiation.html" class="active"><i class="fa-solid fa-radiation"></i>Radiation</a></li>
-<li><a href="nuclear_centrifuge.html"><i class="fa-solid fa-rotate"></i>Gas Centrifuge</a></li>
-<li><a href="nuclear_turbines.html"><i class="fa-solid fa-bolt"></i>Steam Turbines</a></li>
-<li><a href="nuclear_steamfunnel.html"><i class="fa-solid fa-wind"></i>Steam Funnel</a></li>
-<li><a href="nuclear_particleaccelerator.html"><i class="fa-solid fa-circle-nodes"></i>Particle Accelerator</a></li>
-<li><a href="nuclear_quantumtunnel.html"><i class="fa-solid fa-infinity"></i>Quantum Tunnel</a></li>
-<li><a href="nuclear_reactorlogistics.html"><i class="fa-solid fa-network-wired"></i>Nuclear Control</a></li>
-<li><a href="nuclear_radiogen.html"><i class="fa-solid fa-battery-full"></i>Radio. Generator</a></li>
-<li><a href="nuclear_othermachines.html"><i class="fa-solid fa-industry"></i>Other Machines</a></li>
-<li><a href="nuclear_misc.html"><i class="fa-solid fa-list"></i>Misc</a></li>
-
+      <li><a href="nuclear_msreactor.html"><i class="fa-solid fa-flask"></i>MS Reactor</a></li>
+      <li><a href="nuclear_fusionreactor.html"><i class="fa-solid fa-burst"></i>Fusion Reactor</a></li>
+      <li><a href="nuclear_radiation.html" class="active"><i class="fa-solid fa-radiation"></i>Radiation</a></li>
+      <li><a href="nuclear_centrifuge.html"><i class="fa-solid fa-rotate"></i>Gas Centrifuge</a></li>
+      <li><a href="nuclear_turbines.html"><i class="fa-solid fa-bolt"></i>Steam Turbines</a></li>
+      <li><a href="nuclear_steamfunnel.html"><i class="fa-solid fa-wind"></i>Steam Funnel</a></li>
+      <li><a href="nuclear_particleaccelerator.html"><i class="fa-solid fa-circle-nodes"></i>Particle Accelerator</a></li>
+      <li><a href="nuclear_quantumtunnel.html"><i class="fa-solid fa-infinity"></i>Quantum Tunnel</a></li>
+      <li><a href="nuclear_reactorlogistics.html"><i class="fa-solid fa-network-wired"></i>Nuclear Control</a></li>
+      <li><a href="nuclear_radiogen.html"><i class="fa-solid fa-battery-full"></i>Radioisotope Generator</a></li>
+      <li><a href="nuclear_othermachines.html"><i class="fa-solid fa-industry"></i>Other Machines</a></li>
     </ul></nav>
   </aside>
+
   <main class="content">
     <h1><i class="fa-solid fa-radiation"></i>Radiation</h1>
-    <p>Radiation is one of the key mechanics of Nuclear Science. Radiation is measured in rads and is ray casting-based. Each radiation source will be cast out to entities within a certain radius from the source position. If you are outside the radius, you will not be affected by that particular source. Below, the following radiation source has a value of 300 Rads and affects entities in a 3 block radius. By standing outside that 3 block radius, you are not afflicted by it:</p>
-<p>It is important to understand that the strength of a radiation source does not diminish while you are inside its area of affect. Further, radiation application takes into account how tall an entity is. For example, the below source is only 300 Rads strong, but because the player is two blocks tall, the total amount absorbed is 600 rads:</p>
-<p>It is worth noting before continuing however that the ray-casting system isn't perfect, and it will struggle in some edge cases!</p>
-<br>
-<p>But you may be asking "what emits radiation?" Radiation is emitted by various items, blocks, and machines. To see how radioactive an item is, hover over it in your inventory and hold the Control key:</p>
-<p>It is left up to the player to discover what other sources of radiation there are! A good rule of thumb though is that if it works with radioactive materials, there is a good chance it emits radiation. A useful tool to craft early on is the <strong>Geiger Counter</strong>. The Geiger Counter is an invaluable tool that will allow you to view the radiation exposure at a current location. When in your inventory, it will tick if exposed to radiation, making it a useful warning device. Note that Geiger Counter will consume <strong>100</strong> Joules for every tick it detects radiation.</p>
-<br>
-<p>Up until now, we have discussed how radiation works and what emits it, but there has been no mention of if it is possible to mitigate it. Radiation is lethal if exposed to it for long enough. Fortunately, there are various methods offered to deal with this.</p>
-<br>
-<p>The first option is to consume an <strong>Iodine Tablet</strong>. Iodine Tablets offer limited radiation resistance, and are capable of protecting you from up to <strong>1000</strong> Rads for up to <strong>5</strong> Minutes per pill. Even if you are exposed to radiation greater than what the Iodine is rated for, the tablet will still reduce received rads by <strong>1000</strong>. Keep in mind however that the effect is limited, so you will need to keep eating Iodine Tablets!</p>
-<br>
-<p>The next option is to wear a <strong>Hazmat Suit</strong>. The Hazmat Suit is far more robust than an Iodine Tablet, and will protect you from radiation at the expense of durability. You can craft a reinforced variant with more durability, but ultimately it too can break. Fortunately, Hazmat Suits can be repaired using a <strong>Lead-Lined Canister</strong> in an Anvil.</p>
-<br>
-<p>But all these options seem temporary you might be saying. "Surely there has to be a more permanent method." Well, you're in luck! The third option for radiation mitigation is to use blocks that provide radiation shielding. You can view how much shielding a block provides by hovering over it in your inventory and holding the Shift key:</p>
-<p>Shielding functions as an impediment, and will reduce radiation by the value displayed. When placing radiation shielding, it is important to remember that the radiation system takes height into account as discussed earlier. Remember the 300 Rad source we previously used? If you only place one block of shielding, it will only shield you from half the radiation:</p>
-<p>If you wanted to fully shield yourself using blocks, you would need to use two due to the player being two blocks tall:</p>
-<br>
-<p>But what to do if all of this fails? What happens if you get exposed to radiation even after all of these precautions. To remove the radiation effect, you can consume <strong>Antidote</strong>, which will remove the radiation effect completely. Antidote is extracted from fish for reference.</p>
-<br>
-<p>Nuclear Science also offers machines that can help mitigate radiation exposure. The first of these is the <strong>Cloud Chamber</strong>. The Cloud Chamber, if powered and supplied with liquid Methanol, will show all radiation sources around it in a <strong>16</strong> block radius. Sources will appear as a highlighted outline. The Chamber can be toggled using a redstone signal, and will identify how many sources it has detected via its GUI.</p>
-<br>
-<p>The second machine that is offered is the <strong>Fallout Scrubber</strong>. To understand the Fallout Scrubber, you must first understand one of the underlying mechanics for radiation. Nuclear has three types of radiation sources: permanent, temporary, and fading. Permanent sources will never dissipate and are permanent scars on the environment. Temporary sources are similar to permanent sources, however they will eventually dissipate over time. The final source is a fading radiation source. Fading radiation sources will slowly be whittled down by their environment. The default dissipation rate is <strong>0.1</strong> Rad/tick, and can be altered in the settings. The Fallout Scrubber will increase the rateof dissipation in a <strong>16</strong> block radius around it by <strong>1</strong> Rad/tick. This effect stacks with other scrubbers, but will only affect fading radiation sources. The Scrubber needs Water and Decontamination Foam to work.</p>
+
+    <div class="ad-slot">
+      <span class="ad-label">Advertisement</span>
+      <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-fb+5w+4e-db+86" data-ad-client="ca-pub-2631008307109231" data-ad-slot="9535719059"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <div class="info-box warning">
+      <i class="fa-solid fa-triangle-exclamation box-icon"></i>
+      <div>
+        <h4>Core Mechanic</h4>
+        <p>Radiation is <strong>lethal</strong> if you are exposed for too long. Read this page entirely before handling radioactive materials.</p>
+      </div>
+    </div>
+
+    <h2><i class="fa-solid fa-wave-square"></i>How Radiation Works</h2>
+    <p>Radiation is measured in <strong>Rads</strong> and functions using <em>ray casting</em>. Each source emits rays within a defined radius. If you are outside this radius, you are not affected.</p>
+
+    <div class="info-box note">
+      <i class="fa-solid fa-circle-info box-icon"></i>
+      <div>
+        <h4>Height Matters!</h4>
+        <p>The system takes the entity's size into account. A 2-block tall player exposed to a 300 Rad source actually absorbs a total of <strong>600 Rads</strong>.</p>
+      </div>
+    </div>
+
+    <img src="../../images/guidebook_nuclear/radiationradius1.png" alt="Radiation Radius" class="guide-img">
+    <img src="../../images/guidebook_nuclear/radiationradius2.png" alt="Height Effect" class="guide-img">
+
+    <h2><i class="fa-solid fa-biohazard"></i>Radioactive Sources</h2>
+    <p>Hover over an item in your inventory while holding <kbd>Ctrl</kbd> to see its radioactivity level.</p>
+
+    <img src="../../images/guidebook_nuclear/radiationtooltip.png" alt="Radioactivity Tooltip" class="guide-img">
+
+    <p>The main radioactive materials are:</p>
+    <div class="img-grid">
+      <div class="img-card"><img src="../../images/nuclear_items/uranium235.png" alt="Uranium 235"><span><a href="nuclear_items.html#uranium235">Uranium 235</a></span></div>
+      <div class="img-card"><img src="../../images/nuclear_items/uranium238.png" alt="Uranium 238"><span><a href="nuclear_items.html#uranium238">Uranium 238</a></span></div>
+      <div class="img-card"><img src="../../images/nuclear_items/yellowcake.png" alt="Yellowcake"><span><a href="nuclear_items.html#yellowcake">Yellowcake</a></span></div>
+      <div class="img-card"><img src="../../images/nuclear_items/plutonium239.png" alt="Plutonium 239"><span><a href="nuclear_items.html#plutonium239">Plutonium 239</a></span></div>
+      <div class="img-card"><img src="../../images/nuclear_items/fissiledust.png" alt="Fissile Dust"><span><a href="nuclear_items.html#fissiledust">Fissile Dust</a></span></div>
+      <div class="img-card"><img src="../../images/nuclear_items/polonium210.png" alt="Polonium 210"><span><a href="nuclear_items.html#polonium210">Polonium 210</a></span></div>
+    </div>
+
+    <h2><i class="fa-solid fa-magnifying-glass"></i>Detecting Radiation</h2>
+    <p>The <a href="nuclear_items.html#geigercounter"><strong>Geiger Counter</strong></a> is an essential tool for measuring exposure in real-time. Keep it in your inventory — it emits a clicking sound as soon as it detects radiation.</p>
+
+    <div class="img-card" style="display:inline-block;margin:10px 0">
+      <img src="../../images/nuclear_items/geigercounter.png" alt="Geiger Counter">
+      <span>Geiger Counter — 100 J/tick</span>
+    </div>
+
+    <h2><i class="fa-solid fa-shield-halved"></i>Protection</h2>
+
+    <h3><i class="fa-solid fa-pills"></i>Option 1 — Iodine Tablets</h3>
+    <p><a href="nuclear_items.html#iodinetablet"><strong>Iodine Tablets</strong></a> offer temporary protection. They absorb up to <strong>1,000 Rads</strong> for <strong>5 minutes</strong> per tablet, and still reduce damage even beyond their threshold.</p>
+
+    <h3><i class="fa-solid fa-person-military-pointing"></i>Option 2 — Hazmat Suit</h3>
+    <p>The <strong>Full Hazmat Suit</strong> is much more robust. It absorbs radiation at the cost of its durability. A reinforced version is available. It can be repaired using a <a href="nuclear_items.html#canisterlead"><strong>Lead Canister</strong></a> in an anvil.</p>
+
+    <div class="img-grid">
+      <div class="img-card"><img src="../../images/nuclear_items/hazmathelmet.png" alt="Hazmat Helmet"><span><a href="nuclear_items.html#hazmathelmet">Hazmat Helmet</a></span></div>
+      <div class="img-card"><img src="../../images/nuclear_items/hazmatplate.png" alt="Hazmat Chestplate"><span><a href="nuclear_items.html#hazmatplate">Hazmat Chestplate</a></span></div>
+      <div class="img-card"><img src="../../images/nuclear_items/hazmatlegs.png" alt="Hazmat Leggings"><span><a href="nuclear_items.html#hazmatlegs">Hazmat Leggings</a></span></div>
+      <div class="img-card"><img src="../../images/nuclear_items/hazmatboots.png" alt="Hazmat Boots"><span><a href="nuclear_items.html#hazmatboots">Hazmat Boots</a></span></div>
+    </div>
+
+    <h3><i class="fa-solid fa-bricks"></i>Option 3 — Block Shielding</h3>
+    <p>Certain blocks provide shielding against radiation. Hold <kbd>Shift</kbd> while hovering over a block to see its protection value.</p>
+
+    <div class="info-box tip">
+      <i class="fa-solid fa-lightbulb box-icon"></i>
+      <div>
+        <h4>Two Blocks Required</h4>
+        <p>Since the player is 2 blocks tall, you need <strong>2 stacked shielding blocks</strong> for complete protection.</p>
+      </div>
+    </div>
+
+    <img src="../../images/guidebook_nuclear/radiationshielding1.png" alt="1 Block Shielding" class="guide-img">
+    <img src="../../images/guidebook_nuclear/radiationshielding2.png" alt="2 Block Shielding" class="guide-img">
+    <img src="../../images/guidebook_nuclear/radiationshieldingtooltip.png" alt="Shielding Tooltip" class="guide-img">
+
+    <h2><i class="fa-solid fa-heart-pulse"></i>Curing Radiation</h2>
+    <p>If you have been exposed, consume an <a href="nuclear_items.html#antidote"><strong>Antidote</strong></a> to immediately remove the radiation effect. Antidotes are obtained by processing fish.</p>
+
+    <div class="img-card" style="display:inline-block;margin:10px 0">
+      <img src="../../images/nuclear_items/antidote.png" alt="Antidote">
+      <span><a href="nuclear_items.html#antidote">Antidote</a></span>
+    </div>
+
+    <h2><i class="fa-solid fa-gears"></i>Detection and Cleaning Machines</h2>
+
+    <h3><i class="fa-solid fa-eye"></i>Cloud Chamber</h3>
+    <p>Powered by liquid Methanol, the <strong>Cloud Chamber</strong> reveals all radiation sources within a <strong>16-block radius</strong> as glowing outlines. It can be activated by a redstone signal.</p>
+
+    <h3><i class="fa-solid fa-broom"></i>Fallout Scrubber</h3>
+    <p>The <strong>Fallout Scrubber</strong> accelerates the dissipation of <em>degressive</em> radiation sources within a <strong>16-block radius</strong>. It requires water and decontamination foam. The effects of multiple scrubbers stack.</p>
+
+    <table>
+      <tr><th>Source Type</th><th>Behavior</th></tr>
+      <tr><td>Permanent</td><td>Never disappears</td></tr>
+      <tr><td>Temporary</td><td>Disappears over time</td></tr>
+      <tr><td>Degressive</td><td>Reduced by the environment — affected by the scrubber</td></tr>
+    </table>
 
   </main>
 </div>
