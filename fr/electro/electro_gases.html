@@ -3,101 +3,82 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Les gaz — Electrodynamics</title>
+<title>Gaz — Electrodynamics</title>
 <link rel="stylesheet" href="../../style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2631008307109231" crossorigin="anonymous"></script>
 </head>
 <body>
 <div class="container">
   <aside class="sidebar">
     <div class="sidebar-logo"><i class="fa-solid fa-plug"></i><span>Electrodynamics</span></div>
-    <div class="lang-switch">
-      <span class="active">🇫🇷 Français</span>
-      <a href="../../en/electro/electro_gases.html">🇬🇧 English</a>
-    </div>
+    <div class="lang-switch"><span class="active">🇫🇷 Français</span><a href="../../en/electro/electro_gases.html">🇬🇧 English</a></div>
     <nav><ul>
       <li><a href="../../fr/index.html"><i class="fa-solid fa-house"></i>Accueil</a></li>
-      <li><a href="electro_gettingstarted.html"><i class="fa-solid fa-rocket"></i>Commencer </a></li>
-<li><a href="electro_electricity.html"><i class="fa-solid fa-plug"></i>Électricité </a></li>
-<li><a href="electro_machines.html"><i class="fa-solid fa-gears"></i>Machines </a></li>
-<li><a href="electro_generators.html"><i class="fa-solid fa-car-battery"></i>Générateurs </a></li>
-<li><a href="electro_ores.html"><i class="fa-solid fa-gem"></i>Minerais </a></li>
-<li><a href="electro_fluids.html"><i class="fa-solid fa-droplet"></i>Fluides </a></li>
-<li><a href="electro_gases.html" class="active"><i class="fa-solid fa-cloud"></i>Les gaz</a></li>
-<li><a href="electro_tools.html"><i class="fa-solid fa-wrench"></i>Outils </a></li>
-<li><a href="electro_armor.html"><i class="fa-solid fa-shield-halved"></i>Armure </a></li>
-<li><a href="electro_upgrades.html"><i class="fa-solid fa-arrow-up"></i>Améliorateurs </a></li>
-<li><a href="electro_quarry.html"><i class="fa-solid fa-trowel"></i>Le foreur</a></li>
-<li><a href="electro_electrolosischamber.html"><i class="fa-solid fa-microscope"></i>Chambre à électrolyse</a></li>
-<li><a href="electro_metricprefixes.html"><i class="fa-solid fa-ruler"></i>Préfixes métriques</a></li>
-<li><a href="electro_tips.html"><i class="fa-solid fa-lightbulb"></i>Aides </a></li>
-<li><a href="electro_misc.html"><i class="fa-solid fa-ellipsis"></i>Autres </a></li>
-
+      <li><a href="electro_gettingstarted.html"><i class="fa-solid fa-rocket"></i>Commencer</a></li>
+      <li><a href="electro_electricity.html"><i class="fa-solid fa-plug"></i>Électricité</a></li>
+      <li><a href="electro_machines.html"><i class="fa-solid fa-gears"></i>Machines</a></li>
+      <li><a href="electro_generators.html"><i class="fa-solid fa-car-battery"></i>Générateurs</a></li>
+      <li><a href="electro_ores.html"><i class="fa-solid fa-gem"></i>Minerais</a></li>
+      <li><a href="electro_fluids.html"><i class="fa-solid fa-droplet"></i>Fluides</a></li>
+      <li><a href="electro_gases.html" class="active"><i class="fa-solid fa-cloud"></i>Gaz</a></li>
+      <li><a href="electro_tools.html"><i class="fa-solid fa-wrench"></i>Outils</a></li>
+      <li><a href="electro_armor.html"><i class="fa-solid fa-shield-halved"></i>Armure</a></li>
+      <li><a href="electro_upgrades.html"><i class="fa-solid fa-arrow-up"></i>Améliorations</a></li>
+      <li><a href="electro_quarry.html"><i class="fa-solid fa-trowel"></i>Foreuse</a></li>
+      <li><a href="electro_electrolosischamber.html"><i class="fa-solid fa-microscope"></i>Électrolyse</a></li>
+      <li><a href="electro_metricprefixes.html"><i class="fa-solid fa-ruler"></i>Préfixes métriques</a></li>
+      <li><a href="electro_tips.html"><i class="fa-solid fa-lightbulb"></i>Conseils</a></li>
     </ul></nav>
   </aside>
   <main class="content">
-    <h1><i class="fa-solid fa-cloud"></i>Les gaz</h1>
-    <p>Alors que les fluides dans electrodynamics peuvent être similaires à ce que vous avez vu auparavant dans d'autres mods, les gaz sont beaucoup plus complexes et plus profonds. cependant, si vous prêtez attention à quelques éléments clés, vous constaterez que travailler avec des gaz peut être assez indolore et facile à réaliser. ce chapitre couvrira les sujets suivants :</p>
-<br>
-<p>Electrodynamics ajoute les gaz suivants:</p>
-<p>Vous constaterez cependant que vous ne pourrez jamais voir ces gaz lorsque vous travaillez avec eux (sauf dans de rares circonstances comme la liste ci-dessus). même si certains gaz peuvent être colorés ou réfringents dans la vie réelle, la grande majorité d’entre eux sont clairs. avec electrodynamics, vous verrez plutôt la présence d'un gaz via des dispositifs de surveillance comme un manomètre dans une interface graphique ou une barre de durabilité sur un objet.</p>
-<br>
-<p>Les gaz electrodynamics ont également une pression et une température. nous aborderons d'abord la mécanique de la pression. <strong>[item]</strong> est mesuré en unités d'atmosphères (atm). la pression minimale qu'un gaz peut avoir est de 1 atm. la pression d'un gaz ne sera cependant qu'un nombre entier. en d'autres termes, vous ne verrez jamais un gaz avec une pression de 1,23601 atm. lorsque la pression d'un gaz augmente, son volume diminue linéairement. par exemple, si vous doublez la pression d'un gaz, son volume sera divisé par deux. vu.</p>
-<br>
-<p>Tous les objets et machines qui fonctionnent avec des gaz ont une pression nominale maximale. si cette pression est dépassée, la machine ou l'objet peut être endommagé ou même exploser ! par convention, les objets avec un bouchon à pression afficheront le bouchon lorsque le décalage est maintenu :</p>
-<p>Les machines, d'autre part, auront une interface de données dédié affichant la pression maximale pour les réservoirs d'entrée et de sortie :</p>
-<p>Il convient de noter que les conduites de gaz afficheront leur pression nominale maximale dans leur info-bulle habituelle.</p>
-<br>
-<p>Un autre aspect crucial à garder à l'esprit est que les gaz recherchent l'équilibre et égalisent les pressions lorsque deux quantités du même gaz à des pressions différentes sont mélangées. comme la pression est toujours une valeur entière, le gaz avec la pression la plus basse deviendra la pression dominante, et la pression la plus élevée verra sa pression abaissée en nature.</p>
-<br>
-<p>Nous allons maintenant couvrir les mécanismes de <strong>[item]</strong>. la température est mesurée en kelvin (k), et la température minimale qu'un gaz peut atteindre est de 1 degré kelvin. contrairement à la pression, la température peut prendre une valeur non entière, ce qui signifie qu'un gaz peut avoir une température de 273,163k. lorsque la température d'un gaz augmente, son volume augmente linéairement. par exemple, si vous doublez la température d'un gaz, vous doublerez également son volume.</p>
-<br>
-<p>Comme pour la pression, tous les articles et machines qui fonctionnent avec des gaz ont une température nominale maximale. si cette température est dépassée, la machine ou l'article peut être endommagé ou même fondre ! par convention, les articles avec un plafond de température afficheront le plafond lorsque le décalage est maintenu :</p>
-<p>Comme pour la pression, les machines auront une interface dédié affichant la température maximale pour les réservoirs d'entrée et de sortie :</p>
-<h3><i class="fa-solid fa-angle-right"></i>Il convient de noter que les conduites de gaz n'ont pas encore de température nominale maximale.</h3>
-<br>
-<p>Un autre aspect crucial à garder à l'esprit est que les gaz recherchent l'équilibre et égalisent la température lorsque deux quantités du même gaz à des températures différentes sont mélangées. comme la température est une valeur non entière, les gaz combinés prendront la température moyenne des deux gaz combinés.</p>
-<br>
-<p>Une dernière chose à noter sur le sujet de la température est que certains gaz electrodynamics, comme leurs homologues réels, se condenseront en un liquide en dessous d'une certaine température. les gaz suivants ont la capacité de se condenser :</p>
-<br>
-<p>La préoccupation immédiate est maintenant bien sûr qu'arrive-t-il à un gaz s'il se condense alors qu'il est contenu dans une machine ? sur les machines qui manipulent des gaz qui n'ont pas non plus de réservoir de fluide de sortie dédié, vous remarquerez une goutte de fluide grisée :</p>
-<p>Cela représente la capture de ruissellement de la machine. lorsqu'un gaz se condense dans l'une de ces machines, la gouttelette s'allume indiquant qu'un gaz s'est condensé en un fluide et a été capturé. pour extraire ce gaz capté, cliquez simplement sur la gouttelette avec un seau ou un objet similaire. il est important de noter que le collecteur de ruissellement ne peut traiter qu'un seul fluide à la fois. si un gaz se condense alors qu'un fluide est retenu, le fluide existant retenu par la prise sera perdu ! le réservoir n'est pas si important, alors faites attention à ne pas le laisser trop se remplir non plus.</p>
-<br>
-<p>Vu. maintenant que nous connaissons les mécanismes de base de la pression et de la température, nous pouvons discuter de la manipulation des gaz. comme pour les autres machines, les gaz ont un port d'entrée et de sortie dédié. les ports respectifs sont représentés comme suit:</p>
-<br>
-<p>Comme pour les autres ports, ces couleurs sont universelles pour tous les ports de gaz. un exemple de chacun peut être vu sur la page suivante :</p>
-<br>
-<p>Comme pour les fluides, les gaz sont transférés entre les endroits grâce à l'utilisation de tuyaux. les conduites de gaz ne stockent pas de gaz et les machines electrodynamics n'acceptent que les gaz avec lesquels elles peuvent traiter. les tuyaux ont une pression nominale maximale et une capacité de débit. si cette pression est dépassée, le tuyau explosera et le gaz transmis sera perdu. vous avez le choix entre les tuyaux suivants :</p>
-<p>L'inclusion de plastique peut sembler étrange, mais elle joue un rôle très pratique et important. les tuyaux métalliques peuvent être corrodés par certains gaz, alors que le plastique ne peut pas l'être. les gaz suivants sont considérés comme corrosifs et détruiront les tuyaux métalliques :</p>
-<h3><i class="fa-solid fa-angle-right"></i>Faites attention à cette liste, car elle vous fera gagner un temps et des ressources précieux !</h3>
-<br>
-<p>Jusqu’à présent, on a parlé de gaz à différentes températures et pressions, mais on n’a pas parlé de la manière dont ces valeurs sont réellement atteintes. bien sûr, certaines machines peuvent produire un gaz à une certaine température et pression, mais que se passe-t-il si un autre processus nécessite qu'il soit à deux fois la température et la pression ? nous arrivons maintenant à l’objectif de ce chapitre : la manipulation des gaz. electrodynamics propose des machines dédiées pour manipuler la pression et la température d'un gaz.</p>
-<br>
-<p>Les premiers d’entre eux sont le compresseur et le décompresseur. le <strong>[item]</strong> absorbera tout apport de gaz et doublera la pression. à l'inverse, les %2$ prendront tout apport de gaz et réduiront de moitié la pression. par convention, les gaz produits par les machines seront une puissance de deux. cela signifie que le compresseur et le décompresseur fonctionnent efficacement comme des transformateurs de mise à niveau et de rétrogradation !</p>
-<br>
-<p>Un autre bloc proposé est le <strong>[item]</strong>. comme son nom l'indique, le <strong>[item]</strong> est un tuyau monodirectionnel et est capable de filtrer les gaz autorisés à le traverser :</p>
-<p>Cette capacité est passive et est compatible avec les tuyaux d'autres mods. pour programmer un gaz, ouvrez l'interface :</p>
-<br>
-<p>Le troisième bloc de manipulation des gaz est le <strong>[item]</strong>. le manipulateur thermoélectrique est capable de chauffer ou de refroidir un gaz à n'importe quelle température spécifiée. pour programmer la température, ouvrez l'interface graphique et saisissez-la :</p>
-<p>Si vous avez prêté attention à la liste des gaz condensés plus tôt, vous remarquerez peut-être également que le <strong>[item]</strong> dispose d'un réservoir d'entrée et de sortie de fluide. si vous programmez la température au point de condensation du gaz, le manipulateur condensera à son tour le gaz en un fluide. le manipulateur est également capable de convertir des fluides en gaz si la température est supérieure au point de condensation du gaz. de plus, comme le <strong>[item]</strong> et le <strong>[item]</strong>, le <strong>[item]</strong> peut voir la capacité de son réservoir augmentée avec un <strong>[item]</strong>.</p>
-<br>
-<p>Comme pour les fluides et l'électricité, electrodynamics propose plusieurs outils et blocs pour faciliter le travail avec les gaz. ils seront abordés maintenant dans les pages suivantes :</p>
-<p>Bien que les conduites ne soient pas en mesure de stocker du gaz, electrodynamics propose un stockage de gaz en vrac sous forme de bouteilles. les bouteilles de gaz acceptent le gaz par le haut et le rejettent par le bas, comme un réservoir de fluide. de plus, empilez deux cylindres l’un sur l’autre, et celui du haut sortira automatiquement dans celui du bas. une chose importante à noter à propos des bouteilles est cependant qu’elles ne sont pas thermiquement adiabatiques et qu’elles chaufferont ou refroidiront lentement le gaz qu’elles contiennent jusqu’à la température ambiante. les bouteilles de gaz chauffent et refroidissent à un rythme de <strong>[item]</strong> par seconde. vous pouvez contribuer à atténuer ce problème en installant un <strong>[item]</strong> dans le cylindre. chaque pièce réduira le tarif de <strong>[item]</strong> pour un maximum de 6 réductions possibles de <strong>[item]</strong>.</p>
-<p>Le tuyau de filtre à gaz, similaire à la pompe à tuyau de gaz, permet aux gaz de circuler uniquement dans une seule direction, comme une diode. il est également possible de sélectionner quels gaz traversent le filtre. cette capacité est également passive.</p>
-<h3><i class="fa-solid fa-angle-right"></i>Pour programmer un gaz, ouvrer le gui:</h3>
-<p>Le tuyau de filtre à gaz est capable de filtrer jusqu'à 4 gaz à la fois. vous remarquerez également qu'il existe un bouton bascule « liste blanche » et « liste noire ». dans <strong>[item]</strong>, les gaz de la liste de filtres ne pourront plus circuler dans le tuyau. n'ayant aucun gaz sélectionné signifie qu'il laissera passer n'importe quel gaz comme un tuyau normal. en <strong>[item]</strong>, les gaz présents dans le filtre seront les seuls à pouvoir circuler. si aucun gaz n’est sélectionné, cela signifie qu’il ne laissera passer aucun gaz.</p>
-<p>Pour ajouter un gaz filtré, prenez une bouteille de gaz portable ou un autre objet contenant le gaz souhaité, et cliquez sur l'une des fentes du filtre :</p>
-<p>Il convient de noter que le filtre n'est pas compatible avec les étiquettes, ce qui signifie que l'oxygène de ad astra ne sera pas autorisé à passer même si l'oxygène de electrodynamics est sélectionné comme gaz filtré.</p>
-<p>La pompe à gaz a une capacité passive et active. passivement, le bloc agit comme une diode, permettant aux gaz de circuler uniquement dans une seule direction :</p>
-<p>La capacité active nécessite que la pompe soit alimentée et présente l'inconvénient de ne fonctionner qu'avec des conduites de gaz electrodynamics en raison des limitations du jeu. lorsqu'elle est alimentée et connectée à un réseau de canalisations electrodynamics, la pompe a la capacité d'avoir la priorité sur les gaz transmis. la priorité peut être programmée dans son interface graphique :</p>
-<p>La priorité minimale est 0 et la priorité maximale est 9. si plusieurs pompes ont la même priorité, le gaz sera réparti équitablement entre elles.</p>
-<p>La vanne de gaz est un simple interrupteur bidirectionnel. en position d'arrêt, il permettra aux gaz de circuler dans les deux sens comme un tuyau standard :</p>
-<h3><i class="fa-solid fa-angle-right"></i>When it receives a redstone signal however, it prevents all gases from flowing.</h3>
-<p>La ventilation supprime tous les gaz qui y sont acheminés. il est également capable d'accepter manuellement les gaz des seaux via son interface graphique. pour référence, la ventilation est capable d’accepter jusqu’à 128 b à la fois.</p>
-<p>La bouteille de gaz portable agit comme un seau pour les gaz. il a cependant une pression et une température nominales maximales, alors faites attention au gaz avec lequel vous essayez de le remplir !</p>
-<br>
-<p>Les premiers sont les <strong>[item]</strong> et <strong>[item]</strong>. le <strong>[item]</strong> prendra n'importe quelle entrée de gaz et doublera la pression. à l'inverse, le <strong>[item]</strong> prendra n'importe quelle entrée de gaz et réduira de moitié la pression. par convention, les gaz produits par les machines seront une puissance de deux. cela signifie que les <strong>[item]</strong> et <strong>[item]</strong> fonctionnent efficacement comme transformateurs abaisseurs et élévateurs.</p>
+    <h1><i class="fa-solid fa-cloud"></i>Gaz</h1>
 
+    <div class="ad-slot"><span class="ad-label">Publicité</span>
+      <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-fb+5w+4e-db+86" data-ad-client="ca-pub-2631008307109231" data-ad-slot="9535719059"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <div class="info-box note">
+      <i class="fa-solid fa-circle-info box-icon"></i>
+      <div><h4>Gaz vs Fluides</h4>
+        <p>Les gaz dans Electrodynamics sont différents des fluides. Ils ont une <strong>pression</strong> et une <strong>température</strong> qui influencent leur comportement. Un gaz peut se condenser en fluide si sa température descend sous son point de condensation.</p>
+      </div>
+    </div>
+
+    <h2><i class="fa-solid fa-circle-dot"></i>Ports E/S des gaz</h2>
+    <ul>
+      <li><i class="fa-solid fa-circle" style="color:#27ae60"></i> <strong>Vert</strong> — Entrée de gaz</li>
+      <li><i class="fa-solid fa-circle" style="color:#8e44ad"></i> <strong>Violet</strong> — Sortie de gaz</li>
+    </ul>
+
+    <h2><i class="fa-solid fa-pipe-section"></i>Tuyaux à gaz</h2>
+    <p>Les gaz se transportent via des <strong>tuyaux à gaz</strong>. Les tuyaux métalliques conduisent la chaleur — un gaz chaud peut se refroidir dans un long tuyau métallique. Les tuyaux en plastique isolent thermiquement.</p>
+
+    <div class="info-box warning">
+      <i class="fa-solid fa-triangle-exclamation box-icon"></i>
+      <div><h4>Condensation dans les tuyaux</h4>
+        <p>Si un gaz se condense dans un tuyau ou une machine, le liquide résultant est collecté dans un réservoir de ruissellement interne. Pensez à le vider régulièrement.</p>
+      </div>
+    </div>
+
+    <h2><i class="fa-solid fa-sliders"></i>Blocs de contrôle des gaz</h2>
+    <table>
+      <tr><th>Bloc</th><th>Rôle</th></tr>
+      <tr><td><strong>Compresseur</strong></td><td>Double la pression du gaz entrant (divise le volume par 2)</td></tr>
+      <tr><td><strong>Décompresseur</strong></td><td>Divise la pression par 2 (double le volume)</td></tr>
+      <tr><td><strong>Tuyau diode à gaz</strong></td><td>Flux unidirectionnel. Peut filtrer un gaz spécifique via son interface.</td></tr>
+      <tr><td><strong>Manipulateur thermoélectrique</strong></td><td>Chauffe ou refroidit le gaz. Peut provoquer la condensation volontairement.</td></tr>
+      <tr><td><strong>Bouteille de gaz</strong></td><td>Stockage portable de gaz sous pression. Utilisée pour remplir l'armure de combat.</td></tr>
+    </table>
+
+    <h2><i class="fa-solid fa-temperature-half"></i>Pression et température</h2>
+    <p>Chaque gaz a une température de condensation. Si la température descend en dessous, il devient liquide. La pression affecte la densité du gaz stocké — plus la pression est élevée, plus vous stockez de gaz dans le même volume.</p>
+
+    <div class="ad-slot"><span class="ad-label">Publicité</span>
+      <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-fb+5w+4e-db+86" data-ad-client="ca-pub-2631008307109231" data-ad-slot="9535719059"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
   </main>
 </div>
 </body>
