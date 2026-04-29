@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Radiation — Nuclear Science</title>
+<link rel="stylesheet" href="../../style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<div class="container">
+  <aside class="sidebar">
+    <div class="sidebar-logo"><i class="fa-solid fa-atom"></i><span>Nuclear Science</span></div>
+    <div class="lang-switch">
+      <span class="active">🇬🇧 English</span>
+      <a href="../../fr/nuclear/nuclear_radiation.html">🇫🇷 Français</a>
+    </div>
+    <nav><ul>
+      <li><a href="../../en/index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+      <li><a href="nuclear_fissionreactor.html"><i class="fa-solid fa-atom"></i>Fission Reactor</a></li>
+<li><a href="nuclear_msreactor.html"><i class="fa-solid fa-flask"></i>MS Reactor</a></li>
+<li><a href="nuclear_fusionreactor.html"><i class="fa-solid fa-burst"></i>Fusion Reactor</a></li>
+<li><a href="nuclear_radiation.html" class="active"><i class="fa-solid fa-radiation"></i>Radiation</a></li>
+<li><a href="nuclear_centrifuge.html"><i class="fa-solid fa-rotate"></i>Gas Centrifuge</a></li>
+<li><a href="nuclear_turbines.html"><i class="fa-solid fa-bolt"></i>Steam Turbines</a></li>
+<li><a href="nuclear_steamfunnel.html"><i class="fa-solid fa-wind"></i>Steam Funnel</a></li>
+<li><a href="nuclear_particleaccelerator.html"><i class="fa-solid fa-circle-nodes"></i>Particle Accelerator</a></li>
+<li><a href="nuclear_quantumtunnel.html"><i class="fa-solid fa-infinity"></i>Quantum Tunnel</a></li>
+<li><a href="nuclear_reactorlogistics.html"><i class="fa-solid fa-network-wired"></i>Nuclear Control</a></li>
+<li><a href="nuclear_radiogen.html"><i class="fa-solid fa-battery-full"></i>Radio. Generator</a></li>
+<li><a href="nuclear_othermachines.html"><i class="fa-solid fa-industry"></i>Other Machines</a></li>
+<li><a href="nuclear_misc.html"><i class="fa-solid fa-list"></i>Misc</a></li>
+
+    </ul></nav>
+  </aside>
+  <main class="content">
+    <h1><i class="fa-solid fa-radiation"></i>Radiation</h1>
+    <p>Radiation is one of the key mechanics of Nuclear Science. Radiation is measured in rads and is ray casting-based. Each radiation source will be cast out to entities within a certain radius from the source position. If you are outside the radius, you will not be affected by that particular source. Below, the following radiation source has a value of 300 Rads and affects entities in a 3 block radius. By standing outside that 3 block radius, you are not afflicted by it:</p>
+<p>It is important to understand that the strength of a radiation source does not diminish while you are inside its area of affect. Further, radiation application takes into account how tall an entity is. For example, the below source is only 300 Rads strong, but because the player is two blocks tall, the total amount absorbed is 600 rads:</p>
+<p>It is worth noting before continuing however that the ray-casting system isn't perfect, and it will struggle in some edge cases!</p>
+<br>
+<p>But you may be asking "what emits radiation?" Radiation is emitted by various items, blocks, and machines. To see how radioactive an item is, hover over it in your inventory and hold the Control key:</p>
+<p>It is left up to the player to discover what other sources of radiation there are! A good rule of thumb though is that if it works with radioactive materials, there is a good chance it emits radiation. A useful tool to craft early on is the <strong>Geiger Counter</strong>. The Geiger Counter is an invaluable tool that will allow you to view the radiation exposure at a current location. When in your inventory, it will tick if exposed to radiation, making it a useful warning device. Note that Geiger Counter will consume <strong>100</strong> Joules for every tick it detects radiation.</p>
+<br>
+<p>Up until now, we have discussed how radiation works and what emits it, but there has been no mention of if it is possible to mitigate it. Radiation is lethal if exposed to it for long enough. Fortunately, there are various methods offered to deal with this.</p>
+<br>
+<p>The first option is to consume an <strong>Iodine Tablet</strong>. Iodine Tablets offer limited radiation resistance, and are capable of protecting you from up to <strong>1000</strong> Rads for up to <strong>5</strong> Minutes per pill. Even if you are exposed to radiation greater than what the Iodine is rated for, the tablet will still reduce received rads by <strong>1000</strong>. Keep in mind however that the effect is limited, so you will need to keep eating Iodine Tablets!</p>
+<br>
+<p>The next option is to wear a <strong>Hazmat Suit</strong>. The Hazmat Suit is far more robust than an Iodine Tablet, and will protect you from radiation at the expense of durability. You can craft a reinforced variant with more durability, but ultimately it too can break. Fortunately, Hazmat Suits can be repaired using a <strong>Lead-Lined Canister</strong> in an Anvil.</p>
+<br>
+<p>But all these options seem temporary you might be saying. "Surely there has to be a more permanent method." Well, you're in luck! The third option for radiation mitigation is to use blocks that provide radiation shielding. You can view how much shielding a block provides by hovering over it in your inventory and holding the Shift key:</p>
+<p>Shielding functions as an impediment, and will reduce radiation by the value displayed. When placing radiation shielding, it is important to remember that the radiation system takes height into account as discussed earlier. Remember the 300 Rad source we previously used? If you only place one block of shielding, it will only shield you from half the radiation:</p>
+<p>If you wanted to fully shield yourself using blocks, you would need to use two due to the player being two blocks tall:</p>
+<br>
+<p>But what to do if all of this fails? What happens if you get exposed to radiation even after all of these precautions. To remove the radiation effect, you can consume <strong>Antidote</strong>, which will remove the radiation effect completely. Antidote is extracted from fish for reference.</p>
+<br>
+<p>Nuclear Science also offers machines that can help mitigate radiation exposure. The first of these is the <strong>Cloud Chamber</strong>. The Cloud Chamber, if powered and supplied with liquid Methanol, will show all radiation sources around it in a <strong>16</strong> block radius. Sources will appear as a highlighted outline. The Chamber can be toggled using a redstone signal, and will identify how many sources it has detected via its GUI.</p>
+<br>
+<p>The second machine that is offered is the <strong>Fallout Scrubber</strong>. To understand the Fallout Scrubber, you must first understand one of the underlying mechanics for radiation. Nuclear has three types of radiation sources: permanent, temporary, and fading. Permanent sources will never dissipate and are permanent scars on the environment. Temporary sources are similar to permanent sources, however they will eventually dissipate over time. The final source is a fading radiation source. Fading radiation sources will slowly be whittled down by their environment. The default dissipation rate is <strong>0.1</strong> Rad/tick, and can be altered in the settings. The Fallout Scrubber will increase the rateof dissipation in a <strong>16</strong> block radius around it by <strong>1</strong> Rad/tick. This effect stacks with other scrubbers, but will only affect fading radiation sources. The Scrubber needs Water and Decontamination Foam to work.</p>
+
+  </main>
+</div>
+</body>
+</html>

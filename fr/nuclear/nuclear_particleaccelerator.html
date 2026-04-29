@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Accélérateur de particules — Nuclear Science</title>
+<link rel="stylesheet" href="../../style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2631008307109231" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container">
+  <aside class="sidebar">
+    <div class="sidebar-logo"><i class="fa-solid fa-atom"></i><span>Nuclear Science</span></div>
+    <div class="lang-switch"><span class="active">🇫🇷 Français</span><a href="../../en/nuclear/nuclear_particleaccelerator.html">🇬🇧 English</a></div>
+    <nav><ul>
+      <li><a href="../../fr/index.html"><i class="fa-solid fa-house"></i>Accueil</a></li>
+      <li><a href="nuclear_fissionreactor.html"><i class="fa-solid fa-atom"></i>Réacteur à fission</a></li>
+      <li><a href="nuclear_msreactor.html"><i class="fa-solid fa-flask"></i>Réacteur MS</a></li>
+      <li><a href="nuclear_fusionreactor.html"><i class="fa-solid fa-burst"></i>Réacteur à fusion</a></li>
+      <li><a href="nuclear_radiation.html"><i class="fa-solid fa-radiation"></i>Radiation</a></li>
+      <li><a href="nuclear_centrifuge.html"><i class="fa-solid fa-rotate"></i>Centrifugeuse à gaz</a></li>
+      <li><a href="nuclear_turbines.html"><i class="fa-solid fa-bolt"></i>Turbines à vapeur</a></li>
+      <li><a href="nuclear_steamfunnel.html"><i class="fa-solid fa-wind"></i>Entonnoir à vapeur</a></li>
+      <li><a href="nuclear_particleaccelerator.html" class="active"><i class="fa-solid fa-circle-nodes"></i>Accélérateur de particules</a></li>
+      <li><a href="nuclear_quantumtunnel.html"><i class="fa-solid fa-infinity"></i>Tunnel quantique</a></li>
+      <li><a href="nuclear_reactorlogistics.html"><i class="fa-solid fa-network-wired"></i>Contrôle nucléaire</a></li>
+      <li><a href="nuclear_radiogen.html"><i class="fa-solid fa-battery-full"></i>Générateur radioisotope</a></li>
+      <li><a href="nuclear_othermachines.html"><i class="fa-solid fa-industry"></i>Autres machines</a></li>
+      <li><a href="nuclear_items.html"><i class="fa-solid fa-box-open"></i>Items</a></li>
+    </ul></nav>
+  </aside>
+  <main class="content">
+    <h1><i class="fa-solid fa-circle-nodes"></i>Accélérateur de particules</h1>
+
+    <div class="ad-slot">
+      <span class="ad-label">Publicité</span>
+      <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-fb+5w+4e-db+86" data-ad-client="ca-pub-2631008307109231" data-ad-slot="9535719059"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <div class="info-box warning">
+      <i class="fa-solid fa-triangle-exclamation box-icon"></i>
+      <div>
+        <h4>Construction avancée</h4>
+        <p>L'accélérateur est l'une des constructions les plus complexes du mod. Il produit de l'<strong>Antimatière</strong> et de la <strong>Matière noire</strong>, nécessaires pour les machines de fin de partie. Les particules en mouvement <strong>émettent des radiations</strong>.</p>
+      </div>
+    </div>
+
+    <!-- PRINCIPE -->
+    <h2><i class="fa-solid fa-atom"></i>Principe — Résultat d'une collision</h2>
+    <p>Deux particules entrent en collision. Le résultat dépend de leur vitesse combinée selon la formule :</p>
+    <pre><code>résultat = ((v1 + v2) / 4) ²</code></pre>
+    <table>
+      <tr><th>Résultat</th><th>Condition</th><th>Garantie</th></tr>
+      <tr><td><a href="nuclear_items.html#celldarkmatter"><strong>Matière noire</strong></a></td><td>résultat &gt; 0,999 (les deux particules à ≥ 99,99 % de C)</td><td>100 %</td></tr>
+      <tr><td><a href="nuclear_items.html#cellantimattersmall"><strong>Antimatière</strong></a></td><td>résultat &lt; 0,999 (les deux particules à ≥ 50 % de C)</td><td>Variable — augmente avec la vitesse</td></tr>
+      <tr><td>Rien</td><td>Une particule à moins de 50 % de C</td><td>—</td></tr>
+    </table>
+
+    <!-- COMPOSANTS -->
+    <h2><i class="fa-solid fa-cubes"></i>Composants requis</h2>
+    <table>
+      <tr><th>Composant</th><th>Rôle</th></tr>
+      <tr><td><strong>Injecteur de particules</strong></td><td>Crée les particules depuis n'importe quel item/bloc. 20 MJ à 960 V par particule (40 MJ par collision).</td></tr>
+      <tr><td><strong>Cellule électromagnétique</strong></td><td>Capture le résultat de la collision. À placer dans l'injecteur.</td></tr>
+      <tr><td><strong>Booster électromagnétique</strong></td><td>Accélère les particules. +0,33 %/tick en ligne droite, −0,17 %/tick en virage.</td></tr>
+      <tr><td><strong>Électroaimant</strong></td><td>Forme l'anneau de collision. Peut être remplacé par du verre électromagnétique.</td></tr>
+      <tr><td><strong>Interrupteur électromagnétique</strong></td><td>Inverse la direction d'une particule sur deux — indispensable pour les collisions.</td></tr>
+    </table>
+
+    <!-- MÉTHODE 1 -->
+    <h2><i class="fa-solid fa-arrow-right"></i>Méthode 1 — Ligne droite</h2>
+    <p>La méthode la plus simple : une longue ligne de boosters pour atteindre la vitesse voulue. Il faut <strong>200 boosters en ligne droite</strong> pour atteindre 100 % de C. Encombrant mais efficace.</p>
+
+    <img src="../../images/guidebook_nuclear/particleaccelerator1.png" alt="Vue d'ensemble" class="guide-img">
+    <img src="../../images/guidebook_nuclear/particleaccelerator2.png" alt="Formule de collision" class="guide-img">
+    <img src="../../images/guidebook_nuclear/particleaccelerator3.png" alt="Injecteur de particules" class="guide-img">
+    <img src="../../images/guidebook_nuclear/particleaccelerator4.png" alt="Boosters électromagnétiques" class="guide-img">
+
+    <div class="info-box tip">
+      <i class="fa-solid fa-lightbulb box-icon"></i>
+      <div><h4>Minimiser les virages</h4><p>Chaque virage coûte −0,17 %/tick de vitesse. Gardez les lignes droites aussi longues que possible et limitez les coins au strict minimum.</p></div>
+    </div>
+
+    <!-- ANNEAU DE COLLISION -->
+    <h2><i class="fa-solid fa-circle-nodes"></i>Anneau de collision (minimum 3×3)</h2>
+    <p>Les particules expirent après <strong>1 000 ticks</strong>. L'anneau doit donc être aussi petit que possible. Un anneau 3×3 d'électroaimants suffit.</p>
+
+    <img src="../../images/guidebook_nuclear/particleaccelerator5.png" alt="Anneau de collision" class="guide-img">
+    <img src="../../images/guidebook_nuclear/particleaccelerator6.png" alt="Base de l'anneau" class="guide-img">
+    <img src="../../images/guidebook_nuclear/particleaccelerator7.png" alt="Interrupteur" class="guide-img">
+    <img src="../../images/guidebook_nuclear/particleaccelerator8.png" alt="Anneau fermé" class="guide-img">
+
+    <!-- MÉTHODE 2 -->
+    <h2><i class="fa-solid fa-rotate"></i>Méthode 2 — Cyclotron (compact)</h2>
+    <p>Plus complexe mais économe en espace. Nécessite en plus :</p>
+    <ul>
+      <li><i class="fa-solid fa-circle-dot"></i> <strong>Passerelle électromagnétique</strong> — laisse passer les particules au-dessus d'un seuil de vitesse programmable</li>
+      <li><i class="fa-solid fa-circle-dot"></i> <strong>Diode électromagnétique</strong> — force le sens de circulation (la flèche doit pointer dans le sens de déplacement)</li>
+    </ul>
+
+    <img src="../../images/guidebook_nuclear/particleaccelerator9.png" alt="Cyclotron vue" class="guide-img">
+    <img src="../../images/guidebook_nuclear/particleaccelerator10.png" alt="Ligne compacte" class="guide-img">
+    <img src="../../images/guidebook_nuclear/particleaccelerator11.png" alt="Anneau cyclotron" class="guide-img">
+    <img src="../../images/guidebook_nuclear/particleaccelerator12.png" alt="Jonction injecteur" class="guide-img">
+    <img src="../../images/guidebook_nuclear/particleaccelerator13.png" alt="Jonction passerelle" class="guide-img">
+    <img src="../../images/guidebook_nuclear/particleaccelerator14.png" alt="Diode et interrupteur" class="guide-img">
+    <img src="../../images/guidebook_nuclear/particleaccelerator15.png" alt="Anneau complet" class="guide-img">
+    <img src="../../images/guidebook_nuclear/particleaccelerator16.png" alt="Résultat final" class="guide-img">
+
+    <div class="info-box note">
+      <i class="fa-solid fa-circle-info box-icon"></i>
+      <div><h4>Choisir la méthode dans l'injecteur</h4><p>L'injecteur doit être configuré pour la méthode utilisée via l'onglet dans son interface. Vous pouvez aussi y voir la vitesse des deux particules en survolant l'onglet Vitesse.</p></div>
+    </div>
+
+  </main>
+</div>
+</body>
+</html>

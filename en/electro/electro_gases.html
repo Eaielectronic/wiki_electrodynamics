@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Gases — Electrodynamics</title>
+<link rel="stylesheet" href="../../style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<div class="container">
+  <aside class="sidebar">
+    <div class="sidebar-logo"><i class="fa-solid fa-plug"></i><span>Electrodynamics</span></div>
+    <div class="lang-switch">
+      <span class="active">🇬🇧 English</span>
+      <a href="../../fr/electro/electro_gases.html">🇫🇷 Français</a>
+    </div>
+    <nav><ul>
+      <li><a href="../../en/index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+      <li><a href="electro_gettingstarted.html"><i class="fa-solid fa-rocket"></i>Getting Started</a></li>
+<li><a href="electro_electricity.html"><i class="fa-solid fa-plug"></i>Electricity</a></li>
+<li><a href="electro_machines.html"><i class="fa-solid fa-gears"></i>Machines</a></li>
+<li><a href="electro_generators.html"><i class="fa-solid fa-car-battery"></i>Generators</a></li>
+<li><a href="electro_ores.html"><i class="fa-solid fa-gem"></i>Ores</a></li>
+<li><a href="electro_fluids.html"><i class="fa-solid fa-droplet"></i>Fluids</a></li>
+<li><a href="electro_gases.html" class="active"><i class="fa-solid fa-cloud"></i>Gases</a></li>
+<li><a href="electro_tools.html"><i class="fa-solid fa-wrench"></i>Tools</a></li>
+<li><a href="electro_armor.html"><i class="fa-solid fa-shield-halved"></i>Armor</a></li>
+<li><a href="electro_upgrades.html"><i class="fa-solid fa-arrow-up"></i>Upgrades</a></li>
+<li><a href="electro_quarry.html"><i class="fa-solid fa-trowel"></i>The Quarry</a></li>
+<li><a href="electro_electrolosischamber.html"><i class="fa-solid fa-microscope"></i>Electrolosis Chamber</a></li>
+<li><a href="electro_metricprefixes.html"><i class="fa-solid fa-ruler"></i>Metric Prefixes</a></li>
+<li><a href="electro_tips.html"><i class="fa-solid fa-lightbulb"></i>Tips</a></li>
+<li><a href="electro_misc.html"><i class="fa-solid fa-ellipsis"></i>Misc</a></li>
+
+    </ul></nav>
+  </aside>
+  <main class="content">
+    <h1><i class="fa-solid fa-cloud"></i>Gases</h1>
+    <p>While fluids in Electrodynamics may be similar to what you have seen before in other mods, gases are very much more complex and in depth. However, if you pay attention to a few key items, you will find that working with gases can be fairly painless and easy to do. This chapter will cover the following topics:</p>
+<br>
+<p>Electrodynamics adds the following gases:</p>
+<p>You will find however that you are never able to see these gases when working with them (except in rare circumstances like the list above). While certain gases may be colored or refractive in real life, a vast majority are clear. In Electrodynamics, you will instead see the presence of a gas through montioring devices like a pressure gauge in a GUI or a durability bar on an item.</p>
+<br>
+<p>Gases in Electrodyanmics also have a pressure and temperature. We will first cover the mechanics of pressure. <strong>[item]</strong> is measured in units of Atmospheres (ATM). The minimum pressure a gas can have is 1 ATM. A gas's pressure however will only be a whole number. In other words, you will never see a gas with a 1.23601 ATM pressure. As a gas's pressure increases, its volume will decrease linearly. For example, if you double the pressure of a gas, its volume will halve.</p>
+<br>
+<p>All items and machines that work with gases have a maximum rated pressure. If this pressure is exceded, then the machine or item may be damaged or even explode! By convention, items with a pressure cap will display the cap when shift is held:</p>
+<p>Machines on the other hand will have a dedicated GUI data tab displaying the maximum pressure for input and output tanks:</p>
+<p>It should be noted that gas pipes will display their maximum pressure rating in their noraml tooltip.</p>
+<br>
+<p>Another crucial aspect to keep in mind is that gases will seek equilibrium and equalize pressures when two amounts of the same gas at different pressures are mixed. As pressure is always a whole value, the gas with the lowest pressure will become the ruling pressure, and the higher pressure amount will have its pressure lowered in kind.</p>
+<br>
+<p>Now we will cover the mechanics of <strong>[item]</strong>. Temperature is measured in units of Kelvin (K), and the minimum temperature a gas can achieve is 1 degree Kelvin. Like pressure, temperature cannot take a non-whole value, meaning a gas cannot have a temperature of 273.163K. As a gas's temperatrure increases, its volume increases linearly. For example, if you double the temperature of a gas, you will also double its volume.</p>
+<br>
+<p>As with pressure, all items and machines that work with gases have a maximum rated temperature. If this temperature is exceded, then the machine or item may be damaged or even melt! By convention, items with a temperature cap will display the cap when shift is held:</p>
+<p>Similarly to pressure, machines will have a dedicated GUI data tab displaying the maximum temperature for input and output tanks:</p>
+<h3><i class="fa-solid fa-angle-right"></i>It should be noted that gas pipes do not have a maximum rated temperature as of yet.</h3>
+<br>
+<p>Another crucial aspect to keep in mind is that gases will seek equilibrium and equalize temperature when two amounts of the same gas at different temperatures are mixed. As temperature is a non-whole value, the combined gases will take on the average temperature of the two combined gases.</p>
+<br>
+<p>One final thing to note on the topic of temperature is that certain gases in Electrodynamics, like their real-life counterparts, will condense into a liquid below a certain temperature. The following gases have the ability to be condensed:</p>
+<br>
+<p>The immediate concern now is of course what happens to a gas if it condenses while contained within a machine? On machines that handle gases that also do not have a dedicated output fluid tank, you will notice a greyed out fluid droplet:</p>
+<p>This represents the machine's runoff catch. When a gas condenses in one of these machines, the dropplet will light up indicating a gas has condensed into a fluid and has been caught. To extract this caught gas, simply click on the droplet with a bucket or similar item. It is important to note that the runoff catch can only handle one fluid at a time. If a gas condenses while a fluid is held, the existing fluid held by the catch will be lost! The runoff catch is only so large, so be mindful you don't let it get too full either.</p>
+<br>
+<p>Now that we are familiar with the basic mechanics of pressure and temperature, we can discuss how to manipulate gases. As with other machines, gases have a dedicated input and output port. The respective ports are represented as so:</p>
+<br>
+<p>As with other ports, these colors are universal to all gas ports. An example of each can be seen on the next page:</p>
+<br>
+<p>Like with fluids, gases are transfered between places through the use of pipes. Gas pipes do not store gases, and Electrodynamics machines will only accept gases that they can process with. Pipes have a maximum rated pressure and throughput capacity. If this pressure is exceded, the pipe will explode, and the gas being transmitted will be lost. You have the following pipes to chose from:</p>
+<p>The inclusion of plastic may seem strange, but it serves a very pratical and important role. Metal pipes can be corroded by certain gases, where as plastic cannot be. The following gases are considered corrosive, and will destroy metal pipes:</p>
+<h3><i class="fa-solid fa-angle-right"></i>Pay attention to this list, as it will save you valuable time and resources!</h3>
+<br>
+<p>Up until this point, there has been mention of gases at different temperatures and pressures, but no talk of how those values are actually achieved. Sure, some machines might produce a gas at a certain temperature and pressure, but what if another process calls for it to be at twice the temperature and twice the pressure? We now come to what this chapter has been building towards: gas manipulation. Electrodynamics offers dedicated machines for manipulating a gas's pressure and temperature.</p>
+<br>
+<p>The first category of these machines are the compressors. An important guideline for the Electrodynamics gas system is that recipes will only produce gases at pressures that are powers of 2. The <strong>[item]</strong> will take any gas input to it and double the pressure. The <strong>[item]</strong> conversely will take any gas input to it and halve the pressure. With this in mind, a parallel can be drawn between the compressors and transformers, in that they function similarly. The base compressors can only process <strong>[item]</strong> mB of gas per tick due to their small size. Electrodynamics offers a MK2 variant, that while bigger, is able to process up to <strong>[item]</strong> mB of gas per tick.</p>
+<br>
+<p>You may notice however that the input and output tanks on these two blocks have a rather limited storage capacity. This can especially be a problem if you are decompressing a gas. Fortunately, the Compressor and Decompressor can have their storage tank capacities increased by the addition of a <strong>[item]</strong>. The Pressurized Tank is placed atop of the input and output tank like so:</p>
+<p>A total of <strong>[item]</strong> can be stacked to increase the tank capacity.</p>
+<br>
+<p>The second category of these gas manipulating machines are "Gas Thermal Liquid" Chambers, or "GTL" for short. The <strong>[item]</strong> is able to heat or cool a gas to any specified temperature. The base model is capable of processing up to <strong>[item]</strong> mB of gas per tick. Being as small as it is however, the heating unit on board is only able to transfer <strong>[item]</strong> Joules per tick. As with the compressors, a MK2 variant is offered that while bigger is size, is able to process up to <strong>[item]</strong> mB of gas per tick, and is able to transfer <strong>[item]</strong> Joules of heat per tick. To program the temperature, open the GUI, and input it using the text input bar:</p>
+<p>If you paid attention to the condensed gases list from earlier, you may also notice that the <strong>[item]</strong> has a fluid input and output tank. If you program the temperature to the gas's condensation point, the Manipulator will in turn condense the gas into a fluid. The manipulator is also capable of converting fluids into gases if the temperature is above the gas's condensation point. Also, like the <strong>[item]</strong> and <strong>[item]</strong>, the <strong>[item]</strong> can have its tank capacity increased with a <strong>[item]</strong>.</p>
+<br>
+<p>As with fluids and electricity, Electrodynamics offers several tools and blocks to make working with gases easier. They will be covered now on the following pages:</p>
+<p>While pipes may not be able to store gas, Electrodynamics offers bulk gas storage in the form of Cylinders. Gas Cylinders accept gas from the top and output gas through the bottom like a fluid tank. Furthermore, stack two cylinders on top of eachother, and the top one will automatically output into the bottom one. An important thing to note about cylinders however is that they are not thermally adiabatic, and will slowly heat or cool the gas contained within to room temperature. Gas cylinders heat and cool at a rate of <strong>[item]</strong> per second. You can help mitigate this by installing a <strong>[item]</strong> in the cylinder. Each peice will reduce the rate by <strong>[item]</strong> for a maximum of 6 possible reduction of <strong>[item]</strong>.</p>
+<p>The Gas Filter Pipe, similar to the Gas Pipe Pump, only allows gases to flow in one direction like a diode. It also is possible to select which gases pass through the Filter. This ability is passive as well.</p>
+<h3><i class="fa-solid fa-angle-right"></i>To program a gas, open the GUI:</h3>
+<p>The Gas Filter Pipe is capable of filtering up to 4 gases at a time. You will also note there is a "Whitelist" and "Blacklist" toggle button. In <strong>[item]</strong>, the gases in the filter list will be blocked from flowing through the pipe. Having no gases selected means it will allow any gas through like a normal pipe. In <strong>[item]</strong>, the gases in the filter will be the only gass allowed to flow through. Having no gases selected means it will allow no gases through.</p>
+<p>To add a filtered gas, take a Portable Gas Cylinder or otherwise item containing the desiered gas, and click one of the filter slots:</p>
+<p>It should be noted that the filter is not tag-compatible, meaning Oxygen from Mekanism will not be allowed through even though Oxygen from Electrodynamics is selected as a filtered gas.</p>
+<p>The Gas Pipe Pump has a passive and active ability. Passively, the block acts like a diode, allowing gases to only flow in one direction:</p>
+<p>The active ability requires the pump to be powered, and has the downside of only working with Electrodynamics gas pipes due to the limitations of the game. When powered and connected to an Electrodynamics pipe network, the pump has the ability to take priority on the transmitted gases. The priority can be programmed in its GUI:</p>
+<p>The minimum priority is 0 and the maximum is 9. If multiple pumps have the same priority, then the gas will be split evenly among them.</p>
+<p>The Gas Valve is a simple bi-directional switch. In the off-position, it will allow gases to flow both ways through it like a standard pipe:</p>
+<h3><i class="fa-solid fa-angle-right"></i>When it receives a redstone signal however, it prevents all gases from flowing.</h3>
+<p>The Gas Vent deletes all gases that are piped into it. It is also able to manually accept gases from buckets via its GUI. For reference, the Gas Vent is able to accept up to 128 B at a time.</p>
+<p>The Portable Gas Cylinder acts as a bucket for gases. It does have a maximum rated pressure and temperature however, so be mindful of the gas you attempt to fill it with!</p>
+<br>
+<p>Should you ever find yourself having input gas into a machine that you didn't mean to, all hope is not lost. You can click on the input gas gauge(s) with a portable gas cylinder, and the gas will be extracted from the tank and into the cylinder. Note this does not work for output gas gauges, as there is already a gas canister slot for gases to be drained into automatically.</p>
+
+  </main>
+</div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Fluides  — Electrodynamics</title>
+<link rel="stylesheet" href="../../style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<div class="container">
+  <aside class="sidebar">
+    <div class="sidebar-logo"><i class="fa-solid fa-plug"></i><span>Electrodynamics</span></div>
+    <div class="lang-switch">
+      <span class="active">🇫🇷 Français</span>
+      <a href="../../en/electro/electro_fluids.html">🇬🇧 English</a>
+    </div>
+    <nav><ul>
+      <li><a href="../../fr/index.html"><i class="fa-solid fa-house"></i>Accueil</a></li>
+      <li><a href="electro_gettingstarted.html"><i class="fa-solid fa-rocket"></i>Commencer </a></li>
+<li><a href="electro_electricity.html"><i class="fa-solid fa-plug"></i>Électricité </a></li>
+<li><a href="electro_machines.html"><i class="fa-solid fa-gears"></i>Machines </a></li>
+<li><a href="electro_generators.html"><i class="fa-solid fa-car-battery"></i>Générateurs </a></li>
+<li><a href="electro_ores.html"><i class="fa-solid fa-gem"></i>Minerais </a></li>
+<li><a href="electro_fluids.html" class="active"><i class="fa-solid fa-droplet"></i>Fluides </a></li>
+<li><a href="electro_gases.html"><i class="fa-solid fa-cloud"></i>Les gaz</a></li>
+<li><a href="electro_tools.html"><i class="fa-solid fa-wrench"></i>Outils </a></li>
+<li><a href="electro_armor.html"><i class="fa-solid fa-shield-halved"></i>Armure </a></li>
+<li><a href="electro_upgrades.html"><i class="fa-solid fa-arrow-up"></i>Améliorateurs </a></li>
+<li><a href="electro_quarry.html"><i class="fa-solid fa-trowel"></i>Le foreur</a></li>
+<li><a href="electro_electrolosischamber.html"><i class="fa-solid fa-microscope"></i>Chambre à électrolyse</a></li>
+<li><a href="electro_metricprefixes.html"><i class="fa-solid fa-ruler"></i>Préfixes métriques</a></li>
+<li><a href="electro_tips.html"><i class="fa-solid fa-lightbulb"></i>Aides </a></li>
+<li><a href="electro_misc.html"><i class="fa-solid fa-ellipsis"></i>Autres </a></li>
+
+    </ul></nav>
+  </aside>
+  <main class="content">
+    <h1><i class="fa-solid fa-droplet"></i>Fluides </h1>
+    <p>Les fluides jouent un rôle important, tout comme l'électricité electrodynamics. ils sont utilisés pour fabriquer divers matériaux et pour refroidir les machines. heureusement, si vous avez réussi à comprendre l'électricité, alors la mécanique des fluides devrait être un jeu d'enfant, car elle est très similaire au fonctionnement des autres mods. ce chapitre couvrira les sujets suivants :</p>
+<br>
+<p>Electrodynamics ajoute les fluides suivants:</p>
+<h3><i class="fa-solid fa-angle-right"></i>Ces fluides sont utilisés à des fins variés dans le mod.</h3>
+<br>
+<p>Comme pour l'énergie, les fluides ont leurs propres ports e/s. ces ports sont universelles pour n'importe quelle machine qui utilise ou produit des fluides. ils sont:</p>
+<h3><i class="fa-solid fa-angle-right"></i>Voici quelques exemples:</h3>
+<br>
+<p>Cependant, que raccordons-nous à ces ports? la réponse est simple : des tuyaux ! contrairement à d'autres mods, les tuyaux d'electrodynamics n'ont pas de tampon de stockage interne, ce qui signifie qu'ils ne transféreront pas de fluide à moins qu'il n'ait un endroit où aller. cela signifie que vous n'avez pas à vous soucier d'une machine produisant un fluide si vous branchez accidentellement un tuyau. de plus, les machines electrodynamics n'acceptent que les fluides avec lesquels elles peuvent traiter ! les tuyaux ont un taux de transfert limité similaire à l'intensité des fils. cependant, contrairement aux fils, ils n'exploseront pas si cette limite est atteinte. l'inconvénient est que votre choix de tuyau est limité aux capacités de débit suivantes :</p>
+<br>
+<p>Electrodynamics propose également quelques tuyaux de fluide modifiés qui vous permettent de mieux contrôler les fluides de transmission et de réception. le premier d'entre eux est le <strong>[item]</strong>. le <strong>[item]</strong> est un simple commutateur bidirectionnel. en position fermée, il permettra aux fluides de s'écouler dans les deux sens comme un tuyau standard :</p>
+<p>Le tuyau de filtre à fluide, similaire à la pompe à tuyau de fluide, permet aux fluides de s'écouler uniquement dans une seule direction, comme une diode. il est également possible de sélectionner quels fluides traversent le filtre. cette capacité est également passive.</p>
+<h3><i class="fa-solid fa-angle-right"></i>Pour programmer un fluide, ouvrer le gui:</h3>
+<p>Le tuyau de filtre à fluide est capable de filtrer jusqu'à 4 fluides à la fois. vous remarquerez également qu'il existe un bouton bascule « liste blanche » et « liste noire ». dans <strong>[item]</strong>, les fluides de la liste de filtres ne pourront plus circuler dans le tuyau. n'ayant aucun fluide sélectionné signifie qu'il laissera passer n'importe quel fluide comme un tuyau normal. dans <strong>[item]</strong>, les fluides présents dans le filtre seront les seuls fluides autorisés à circuler. si aucun fluide n’est sélectionné, cela signifie qu’il ne laissera passer aucun fluide.</p>
+<p>Pour ajouter un fluide filtré, prenez un seau ou un autre objet contenant le fluide souhaité, et cliquez sur l'un des emplacements du filtre :</p>
+<p>Il convient de noter que le filtre n'est pas compatible avec les étiquettes, ce qui signifie que l'éthanol d'immersive engineering ne sera pas autorisé à passer même si l'éthanol d'electrodynamics est sélectionné comme fluide filtré.</p>
+<p>La pompe à tuyau fluide a une capacité passive et active. passivement, le bloc agit comme une diode, permettant aux fluides de circuler uniquement dans un seul sens :</p>
+<p>La capacité active nécessite que la pompe soit alimentée et présente l'inconvénient de ne fonctionner qu'avec des tuyaux de fluide electrodynamics en raison des limitations du jeu. lorsqu'elle est alimentée et connectée à un réseau de canalisations electrodynamics la pompe a la capacité d'avoir la priorité sur les fluides transmis. la priorité peut être programmée dans son interface graphique :</p>
+<p>La priorité minimale est 0 et la priorité maximale est 9. si plusieurs pompes ont la même priorité, le fluide sera réparti uniformément entre elles.</p>
+<p>Les réservoirs de fluides sont la solution d'electrodynamics pour le stockage de fluides en vrac. ils acceptent le fluide par le haut et le rejettent par le bas. de plus, empilez deux réservoirs l’un sur l’autre, et celui du haut sortira automatiquement dans celui du bas.</p>
+<p>La vanne fluidique est un simple interrupteur bidirectionnel. en position d'arrêt, il permettra aux fluides de circuler dans les deux sens comme un tuyau standard :</p>
+<p>Cependant, lorsqu'il est alimenté par un signal redstone, il empêche les fluides de le traverser dans n'importe quelle direction. cette capacité est passive et ne nécessite pas de puissance.</p>
+<p>Le videur de fluide supprime tous les fluides qui y sont acheminés. il est également capable d'accepter manuellement les fluides des seaux via son interface graphique. pour référence, le fluid void est capable d'accepter jusqu'à 128 b à la fois.</p>
+<p>La plupart des fluides electrodynamics ne peuvent pas être transportés par un seau vanilla. par exemple, cela n’a tout simplement pas de sens de transférer de l’acide sulfurique dans un seau en fer. si vous devez déplacer manuellement des fluides tels que l'acide sulfurique, vous devrez utiliser un bidon renforcé.</p>
+<br>
+<p>Si jamais vous vous retrouvez à devoir injecter du fluide dans une machine sans que vous le vouliez, tout espoir n'est pas perdu. vous pouvez cliquer sur la ou les jauges de fluide d'entrée avec un seau ou un bidon renforcé, et le fluide sera extrait du réservoir et dans le réservoir de fluide. notez que cela ne fonctionne pas pour les jauges de fluide de sortie, car il existe déjà une fente pour seau dans laquelle les fluides peuvent être automatiquement vidangés.</p>
+
+  </main>
+</div>
+</body>
+</html>

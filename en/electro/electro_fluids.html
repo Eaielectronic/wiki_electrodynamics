@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Fluids — Electrodynamics</title>
+<link rel="stylesheet" href="../../style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<div class="container">
+  <aside class="sidebar">
+    <div class="sidebar-logo"><i class="fa-solid fa-plug"></i><span>Electrodynamics</span></div>
+    <div class="lang-switch">
+      <span class="active">🇬🇧 English</span>
+      <a href="../../fr/electro/electro_fluids.html">🇫🇷 Français</a>
+    </div>
+    <nav><ul>
+      <li><a href="../../en/index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+      <li><a href="electro_gettingstarted.html"><i class="fa-solid fa-rocket"></i>Getting Started</a></li>
+<li><a href="electro_electricity.html"><i class="fa-solid fa-plug"></i>Electricity</a></li>
+<li><a href="electro_machines.html"><i class="fa-solid fa-gears"></i>Machines</a></li>
+<li><a href="electro_generators.html"><i class="fa-solid fa-car-battery"></i>Generators</a></li>
+<li><a href="electro_ores.html"><i class="fa-solid fa-gem"></i>Ores</a></li>
+<li><a href="electro_fluids.html" class="active"><i class="fa-solid fa-droplet"></i>Fluids</a></li>
+<li><a href="electro_gases.html"><i class="fa-solid fa-cloud"></i>Gases</a></li>
+<li><a href="electro_tools.html"><i class="fa-solid fa-wrench"></i>Tools</a></li>
+<li><a href="electro_armor.html"><i class="fa-solid fa-shield-halved"></i>Armor</a></li>
+<li><a href="electro_upgrades.html"><i class="fa-solid fa-arrow-up"></i>Upgrades</a></li>
+<li><a href="electro_quarry.html"><i class="fa-solid fa-trowel"></i>The Quarry</a></li>
+<li><a href="electro_electrolosischamber.html"><i class="fa-solid fa-microscope"></i>Electrolosis Chamber</a></li>
+<li><a href="electro_metricprefixes.html"><i class="fa-solid fa-ruler"></i>Metric Prefixes</a></li>
+<li><a href="electro_tips.html"><i class="fa-solid fa-lightbulb"></i>Tips</a></li>
+<li><a href="electro_misc.html"><i class="fa-solid fa-ellipsis"></i>Misc</a></li>
+
+    </ul></nav>
+  </aside>
+  <main class="content">
+    <h1><i class="fa-solid fa-droplet"></i>Fluids</h1>
+    <p>Fluids play an important role just like electricity in Electrodynamics. They're used for crafting various materials and for cooling machinery. Fortunately, if you have been able to grasp Electricity, then fluid mechanics should be a breeze, as they are very similar to how other mods work. This chapter will cover the following topics:</p>
+<br>
+<p>Electrodynamics adds the following fluids:</p>
+<h3><i class="fa-solid fa-angle-right"></i>These fluids are used for various purposes throught the mod.</h3>
+<br>
+<p>As with energy, fluids have their own I/O ports. These ports are universal to any machine that uses or produces fluid. They are:</p>
+<h3><i class="fa-solid fa-angle-right"></i>Here are some examples:</h3>
+<br>
+<p>However, what do we hook up to these ports? The answer is simple: <strong>[item]</strong>! Unlike other mods, pipes in Electrodynamics have no internal storage buffer, which means they will not transfer a fluid unless it has somewhere to go. This means you don't have to worry about a machine outputting a fluid if you hook up a pipe accidentally. Also, Electrodynamics machines will only accept fluids they can process with! Pipes have a limited transfer rate similar to the ampacity of wires. However, unlike wires, they will not explode if this limit is reached. The downside though is that your choice of pipe is limited to the following throughput capacities:</p>
+<br>
+<p>Electrodynamics offers several fluid tools and a few specialized fluid pipes that can be used to enhance fluid control. These will be covered on the next few pages.</p>
+<p>The Fluid Filter Pipe, similar to the Fluid Pipe Pump, only allows fluids to flow in one direction like a diode. It also is possible to select which fluids pass through the Filter. This ability is passive as well.</p>
+<h3><i class="fa-solid fa-angle-right"></i>To program a fluid, open the GUI:</h3>
+<p>The Fluid Filter Pipe is capable of filtering up to 4 fluids at a time. You will also note there is a "Whitelist" and "Blacklist" toggle button. In <strong>[item]</strong>, the fluids in the filter list will be blocked from flowing through the pipe. Having no fluids selected means it will allow any fluid through like a normal pipe. In <strong>[item]</strong>, the fluids in the filter will be the only fluids allowed to flow through. Having no fluids selected means it will allow no fluids through.</p>
+<p>To add a filtered fluid, take a bucket or otherwise item containing the desiered fluid, and click one of the filter slots:</p>
+<p>It should be noted that the filter is not tag-compatible, meaning Ethanol from Immersive Engineering will not be allowed through even though Ethanol from Electrodynamics is selected as a filtered fluid.</p>
+<p>The Fluid Pipe Pump has a passive and active ability. Passively, the block acts like a diode, allowing fluids to only flow in one direction:</p>
+<p>The active ability requires the pump to be powered, and has the downside of only working with Electrodynamics fluid pipes due to the limitations of the game. When powered and connected to an Electrodynamics pipe network, the pump has the ability to take priority on the transmitted fluids. The priority can be programmed in its GUI:</p>
+<p>The minimum priority is 0 and the maximum is 9. If multiple pumps have the same priority, then the fluid will be split evenly among them.</p>
+<p>Fluid Tanks are Electrodynamics' solution to bulk fluid storage. They accept fluid from the top and output fluid through the bottom. Furthermore, stack two tanks on top of eachother, and the top one will automatically output into the bottom one.</p>
+<p>The Fluid Valve is a simple bi-directional switch. In the off-position, it will allow fluids to flow both ways through it like a standard pipe:</p>
+<p>When powered with a redstone signal however, it prevents fluids from flowing through it in any direction. This ability is passive and does not require power.</p>
+<p>The Fluid Void deletes all fluids that are piped into it. It is also able to manually accept fluids from buckets via its GUI. For reference, the Fluid Void is able to accept up to 128 B at a time.</p>
+<p>Most Electrodynamics fluids cannot be carried by a Vanilla bucket. For example, it simply doesn't make sense to transfer Sulfuric Acid in a bucket made out of Iron. If you need to manually move fluids such as Sulfuric Acid, you will need to use a Reinforced Canister.</p>
+<br>
+<p>Should you ever find yourself having input fluid into a machine that you didn't mean to, all hope is not lost. You can click on the input fluid gauge(s) with a bucket or reinforced canister, and the fluid will be extracted from the tank and into the fluid container. Note this does not work for output fluid gauges, as there is already a bucket slot for fluids to be drained into automatically.</p>
+
+  </main>
+</div>
+</body>
+</html>

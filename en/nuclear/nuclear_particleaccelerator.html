@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Particle Accelerator — Nuclear Science</title>
+<link rel="stylesheet" href="../../style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<div class="container">
+  <aside class="sidebar">
+    <div class="sidebar-logo"><i class="fa-solid fa-atom"></i><span>Nuclear Science</span></div>
+    <div class="lang-switch">
+      <span class="active">🇬🇧 English</span>
+      <a href="../../fr/nuclear/nuclear_particleaccelerator.html">🇫🇷 Français</a>
+    </div>
+    <nav><ul>
+      <li><a href="../../en/index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+      <li><a href="nuclear_fissionreactor.html"><i class="fa-solid fa-atom"></i>Fission Reactor</a></li>
+<li><a href="nuclear_msreactor.html"><i class="fa-solid fa-flask"></i>MS Reactor</a></li>
+<li><a href="nuclear_fusionreactor.html"><i class="fa-solid fa-burst"></i>Fusion Reactor</a></li>
+<li><a href="nuclear_radiation.html"><i class="fa-solid fa-radiation"></i>Radiation</a></li>
+<li><a href="nuclear_centrifuge.html"><i class="fa-solid fa-rotate"></i>Gas Centrifuge</a></li>
+<li><a href="nuclear_turbines.html"><i class="fa-solid fa-bolt"></i>Steam Turbines</a></li>
+<li><a href="nuclear_steamfunnel.html"><i class="fa-solid fa-wind"></i>Steam Funnel</a></li>
+<li><a href="nuclear_particleaccelerator.html" class="active"><i class="fa-solid fa-circle-nodes"></i>Particle Accelerator</a></li>
+<li><a href="nuclear_quantumtunnel.html"><i class="fa-solid fa-infinity"></i>Quantum Tunnel</a></li>
+<li><a href="nuclear_reactorlogistics.html"><i class="fa-solid fa-network-wired"></i>Nuclear Control</a></li>
+<li><a href="nuclear_radiogen.html"><i class="fa-solid fa-battery-full"></i>Radio. Generator</a></li>
+<li><a href="nuclear_othermachines.html"><i class="fa-solid fa-industry"></i>Other Machines</a></li>
+<li><a href="nuclear_misc.html"><i class="fa-solid fa-list"></i>Misc</a></li>
+
+    </ul></nav>
+  </aside>
+  <main class="content">
+    <h1><i class="fa-solid fa-circle-nodes"></i>Particle Accelerator</h1>
+    <img src="../../images/guidebook_nuclear/particleaccelerator1.png" alt="Illustration 1" class="guide-img">
+<p>The Particle Accelerator is used to make Anti-Matter and Dark Matter. Both are generated when two Particles collide at semi-luminal speeds. The result of a particle collision is determined by the following formula:</p>
+<br>
+<img src="../../images/guidebook_nuclear/particleaccelerator2.png" alt="Illustration 2" class="guide-img">
+<p>where s1 and s2 are the speeds of the two particles. Dark Matter is created when the resulting value is greater than 0.999, and has a 100% chance of being created. To achieve this, both particles must be traveling at least 99.99% the Speed of Light. Otherwise, Anti-Matter is created from the collision. Unlike Dark Matter, the chance of Anti-Matter being generated is not guaranteed, and its chance of being created increases the closer the resulting value gets to 0.999. Note nothing will be created if both particles are not traveling at least 50% the speed of light.</p>
+<br>
+<img src="../../images/guidebook_nuclear/particleaccelerator3.png" alt="Illustration 3" class="guide-img">
+<p>In order to collide particles, you will first need to create them. For this, you will need a <strong>Particle Injector</strong>. The Injector uses matter to make a particle, and any block or item can be used to supply the matter. Place the matter in its respective slot in the Injector. While this will create the particle, to actually catch the result of the collision, you will need to craft an <strong>Electromagnetic Cell</strong> and insert it as well. The Injector uses <strong>20 MJ</strong> per particle at 960 V. This means you will actually need <strong>40 MJ</strong> for each collision. Note the injector can be disabled using redstone.</p>
+<br>
+<img src="../../images/guidebook_nuclear/particleaccelerator4.png" alt="Illustration 4" class="guide-img">
+<p>While the Injector creates particles, it only spawns them at very low speeds. In order to achieve the speeds needed for a collision, the particle will need to be passed through an <strong>Electromagnetic Booster</strong>. Particles while passing through boosters follow two simple principles. If the Particle and Booster are facing the same direction, the Booster will increase the Particle's speed by <strong>0.33%</strong> for every tick the Particle is inside the Booster. If the Booster is a corner causing the particle to turn, the Particle's speed will receive a <strong>0.17%</strong> penalty for each tick it is inside the corner. This means that corners should be kept to a minimum when creating the accelerator ring. It is worth noting now that moving particles emit radiation.</p>
+<br>
+<img src="../../images/guidebook_nuclear/particleaccelerator5.png" alt="Illustration 5" class="guide-img">
+<p>But how do we get two particles to actually collide? This is where regular Electromagnets come in. You will need to construct a ring of Electromagnets to allow the Particles to circle and collide. It is incredibly important to note that particles will expire after <strong>1000</strong> ticks, so it is desirable to make the Electromagnet ring as small as possible. In this example case, we will be using a 3x3 ring.</p>
+<br>
+<img src="../../images/guidebook_nuclear/particleaccelerator6.png" alt="Illustration 6" class="guide-img">
+<h3><i class="fa-solid fa-angle-right"></i>Start by laying out the bottom of the ring at the end of the Booster chain like so:</h3>
+<br>
+<img src="../../images/guidebook_nuclear/particleaccelerator7.png" alt="Illustration 7" class="guide-img">
+<p>To ensure the particles actually collide, you will need to switch the direction of one, which can be accomplished using a <strong>Electromagnetic Switch</strong>. The Switch flips the direction of every other particle that crosses it. Place the switch at the entrance to the collider ring like so:</p>
+<br>
+<img src="../../images/guidebook_nuclear/particleaccelerator8.png" alt="Illustration 8" class="guide-img">
+<p>Now, fill in the sides and top of the ring to create an enclosed structure for the Particles. Note either Electromagnets or Electromagnetic Glass can be used. Note the turn penalty is no longer in affect once the particle passes through the switch for the first time.</p>
+<br>
+<img src="../../images/guidebook_nuclear/particleaccelerator9.png" alt="Illustration 9" class="guide-img">
+<p>You may have noticed that up until now, there has been little discussion of how to construct the accelerator ring. This is because there are two methods to construct it. The first method is to create a line of accelerators long enough to achieve the particle's needed speed. This method is the simplest solution, however it is rather bulky, and attempts to compact it will result in many turns being introduced as can be demonstrated below:</p>
+<br>
+<img src="../../images/guidebook_nuclear/particleaccelerator10.png" alt="Illustration 10" class="guide-img">
+<h3><i class="fa-solid fa-angle-right"></i>While bulky, it is the fastest method to achieve collisions.</h3>
+<br>
+<img src="../../images/guidebook_nuclear/particleaccelerator11.png" alt="Illustration 11" class="guide-img">
+<p>The second option is to make use of a Cyclotron ring. This method is more complex and slower at producing collisions, however it gains the ability to be more space efficient. To make use of a Cyclotron ring, you will additionally need an <strong>Electromagnetic Gateway</strong> and <strong>Electromagnetic Diode</strong>. To construct the Cyclotron, build a ring of Boosters. Note one corner will need to be a junction made of out Electromagnets to give the Particle Injector a spot.</p>
+<br>
+<img src="../../images/guidebook_nuclear/particleaccelerator12.png" alt="Illustration 12" class="guide-img">
+<p>In another corner, place another Electromagnet junction to give the Electromagnetic Gateway access to the ring. The most efficient spot to place the Gateway is in the same Junction as the Particle Injector.</p>
+<br>
+<img src="../../images/guidebook_nuclear/particleaccelerator13.png" alt="Illustration 13" class="guide-img">
+<p>The Gateway will only allow particles to pass through if they have a specific percentage speed of light equal or greater to the value programmed. The value can be programmed using the Gateway's GUI.</p>
+<br>
+<img src="../../images/guidebook_nuclear/particleaccelerator14.png" alt="Illustration 14" class="guide-img">
+<p>After the Gateway, place the Electromagnetic Diode. The arrow must be pointing in the direction of travel of the particle. Place the Electromagnetic Switch after the Diode.</p>
+<br>
+<img src="../../images/guidebook_nuclear/particleaccelerator15.png" alt="Illustration 15" class="guide-img">
+<h3><i class="fa-solid fa-angle-right"></i>Finally, surround everything with Electromagnets and create the collision loop.</h3>
+<br>
+<img src="../../images/guidebook_nuclear/particleaccelerator16.png" alt="Illustration 16" class="guide-img">
+<p>An important item to note about the two methods described above is that the Injector must be programmed to use the respective method. This can be accomplished via the tab button in its GUI. You can also view the speed of the two particles by hovering over the Speed tab.</p>
+
+  </main>
+</div>
+</body>
+</html>
